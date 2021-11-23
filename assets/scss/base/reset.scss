@@ -14,5 +14,60 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: var(--ff-carter);
+    font-family: var(--ff-montserrat);
+    line-height: 1.3;
+    min-height: 100vh;
 }
+
+//links
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+//list
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+    list-style-type: none;
+    }
+}
+
+//images
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+
+  /* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* Screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
